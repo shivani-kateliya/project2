@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul class="menu">
+        <li> <a href="first.html" style="text-decoration: none; color:black;">Home</a></li>
+        <li> <a href="Menu.html" style="text-decoration: none; color: black;">Menu</a></li>
+        <li> <a href="Contact.html" style="text-decoration: none; color: black;">Contact Us</a></li>
+    </ul>
+    <div class="boxes">
+
+        <div class="box1">
+            <ul>
+                <h2>Cakes</h2>
+                <li class="me">Black Forest:500 per kg</li>
+                <li class="me">Pineapple: 400 per kg</li>
+                <li class="me">Red-Velvet: 800 per kg</li>
+                <li class="me">Chocolate: 600 per kg</li>
+                <li class="me">FruitCake: 500 per kg</li>
+                <li class="me">CheeseCake: 1200 per kg</li>
+
+            </ul>
+        </div>
+
+        <div class="box1">
+            <ul>
+                <h2>Puff</h2>
+                <li class="me"> Masala puff: 25 Rupees</li>
+                <li class="me"> simple puff: 40 Rupees</li>
+                <li class="me"> American puff: 30 Rupees</li>
+                <li class="me"> Chinese puff: 20 Rupees</li>
+                <li class="me"> Cheese puff: 80 Rupees</li>
+
+
+            </ul>
+        </div>
+
+        <div class="box1">
+            <ul>
+                <h2>Cookies</h2>
+                <li class="me"> bar cookies: 250 per kg</li>
+                <li class="me"> drop cookies: 400 per kg</li>
+                <li class="me"> filled cookies: 930 per kg</li>
+                <li class="me"> molded cookies: 720 per kg</li>
+                <li class="me"> sandwich cookies: 480 per kg</li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="boxes2">
+        <div class="box1">
+            <ul>
+                <h2>Donuts</h2>
+                <li class="me"> Filled donuts: 50 Rupees</li>
+                <li class="me"> Cruller: 40 Rupees</li>
+                <li class="me"> Mochi Donut: 90 Rupees</li>
+                <li class="me"> Filled donuts: 70 Rupees</li>
+                <li class="me"> Yeast Donuts: 80 Rupees</li>
+
+
+            </ul>
+        </div>
+
+        <div class="box1">
+            <ul>
+                <h2>Muffins</h2>
+                <li class="me">Blueberry muffins : 50 Rupees</li>
+                <li class="me"> Chocolate Chip Muffins: 90 Rupees</li>
+                <li class="me"> Banana Muffins: 70 Rupees</li>
+            </ul>
+        </div>
+
+
+        <div class="box1">
+            <ul>
+                <h2>Brownies</h2>
+                <li class="me">Chocalate BrownieS: 150 Rupees</li>
+                <li class="me"> Classic brownies: 90 Rupees</li>
+                <li class="me"> Banana Classic brownies: 70 Rupees</li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+
+
+
+<script>
+
+    // document.querySelectorAll(".box1").forEach(function(element) {
+    //     element.addEventListener("mouseover", function() {
+    //         element.style.background = "purple";
+    //     });
+    //     element.addEventListener("mouseout", function() {
+    //         element.style.background = "";
+    //     });
+    // });
+
+    let elements = document.getElementsByClassName("box1");
+
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener("mouseover", function () {
+            elements[i].style.background = " rgb(226, 177, 226)";
+            elements[i].style.borderColor = " purple";
+        });
+        elements[i].addEventListener("mouseout", function () {
+            elements[i].style.background = "";
+            elements[i].style.borderColor = "";
+        });
+    }
+
+</script>
+</html>
